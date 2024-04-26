@@ -12,12 +12,10 @@ try {
 const octokit = new Octokit({
   authStrategy: createAppAuth,
   auth: {
-    id: 75833,
-    installationId: 11101003,
-    clientId: "Iv1.8d2f7d117f535668",
-    clientSecret: process.env.clientSecret ? process.env.clientSecret : secrets.clientSecret,
-    // privateKey: process.env.privateKey ? process.env.privateKey : secrets.privateKey,
-    privateKey: "11ABCJMOI0HPODpAuxGWtL_pf3ScEZIZ2eDFtDaroSN4Ke2RephOVr9XbTLzMd1znuVTCXEXRUcoVSRGeq",
+    id: 758323,
+    installationId: 111010034,
+    clientId: "Iv1.8d2f7d117f535678",
+    privateKey: "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",
   },
 });
 
