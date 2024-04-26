@@ -18,8 +18,9 @@ const octokit = new Octokit({
     privateKey: "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",
   },
 });
- console.log(process.env.privateKey)
-
+console.log('start-------------up')
+console.log(process.env.privateKey)
+console.log('end---------------up')
 const open = async ({owner, repo, title, body}) => {
   try {    
     console.log('opening issue');
