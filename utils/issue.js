@@ -15,12 +15,12 @@ const octokit = new Octokit({
     id: 885185,
     installationId: 111010034,
     clientId: "Iv1.e5c48aaf86f76c7a",
-    privateKey: process.env.privateKey  ? process.env.privateKey  : secrets.privateKey,,
+    privateKey: process.env.privateKey  ? process.env.privateKey  : secrets.privateKey,
   },
 });
-console.log('start-------------up')
-console.log(process.env.privateKey)
-console.log('end---------------up')
+
+// console.log(process.env.privateKey)
+
 const open = async ({owner, repo, title, body}) => {
   try {    
     console.log('opening issue');
