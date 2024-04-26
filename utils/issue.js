@@ -15,7 +15,7 @@ const octokit = new Octokit({
     id: 758323,
     installationId: 111010034,
     clientId: "Iv1.8d2f7d117f535678",
-    privateKey: "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",
+ //   privateKey: "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",
   },
 });
 
