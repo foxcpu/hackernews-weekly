@@ -8,7 +8,7 @@ const run = async (date) => {
   const contents = await getHeadlines(date);
   console.log(contents)
   const res = await issue.open({
-    owner: 'headllines',
+    owner: 'foxcpu',
     repo: 'hackernews-weekly',
     title: `Hacker News Weekly Top 10 @${new Date(date).toISOString().slice(0, 10)}`,
     body: contents
@@ -17,7 +17,7 @@ const run = async (date) => {
 
   
   await issue.lock({
-    owner: 'headllines',
+    owner: 'foxcpu',
     repo: 'hackernews-weekly', 
     issueNumber,
   });
