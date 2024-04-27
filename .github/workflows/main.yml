@@ -5,10 +5,12 @@ on:
   schedule:
   - cron: "10 * * * *"
   
-permissions: write-all
 jobs:
   fetch-top-posts:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
     - uses: actions/checkout@v2
       with:
