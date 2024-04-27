@@ -40,7 +40,7 @@ const open = async ({owner, repo, title, body}) => {
 
 const lock = async ({owner, repo, issueNumber}) => {
   console.log('locking issue');
-  console.log('PUT /repos/{owner}/{repo}/issues/{issue_number}/lock');
+  console.log('PUT /repos/'+{owner}+'/'+{repo}+'/issues/'+{issue_number}+'/lock');
   await octokit.request('PUT /repos/{owner}/{repo}/issues/{issue_number}/lock', {
     owner: owner,
     repo: repo,
